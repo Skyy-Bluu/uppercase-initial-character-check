@@ -1,3 +1,5 @@
+import StringCheck.isInitialCharacterAtoZUsingRegex
+import StringCheck.isInitialCharacterAtoZUsingUpperCase
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -6,49 +8,49 @@ class StringCheckTest{
 
     @Test
     fun isInitialCharacterAtoZUsingRegexReturnsTrueWhenGivenStringWithInitialUpperCaseLetter(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingRegex("Yes")
+        val boolean = "Yes".isInitialCharacterAtoZUsingRegex()
         assertTrue(boolean)
     }
 
     @Test
     fun isInitialCharacterAtoZUsingRegexReturnsFalseWhenGivenStringWithInitialLowerCaseLetter(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingRegex("no")
+        val boolean = "no".isInitialCharacterAtoZUsingRegex()
         assertFalse(boolean)
     }
 
     @Test
     fun isInitialCharacterAtoZUsingUpperCaseReturnsTrueWhenGivenStringWithInitialUpperCaseLetter(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingUpperCase("Yes")
+        val boolean = "Yes".isInitialCharacterAtoZUsingUpperCase()
         assertTrue(boolean)
     }
 
     @Test
     fun isInitialCharacterAtoZUsingUpperCaseReturnsFalseWhenGivenStringWithInitialLowerCaseLetter(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingUpperCase("no")
+        val boolean = "no".isInitialCharacterAtoZUsingUpperCase()
         assertFalse(boolean)
     }
 
     @Test
     fun isInitialCharacterAtoZUsingUpperCaseReturnsFalseWhenGivenBlankString(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingUpperCase(" ")
+        val boolean = " ".isInitialCharacterAtoZUsingUpperCase()
         assertFalse(boolean)
     }
 
     @Test
     fun isInitialCharacterAtoZUsingRegexReturnsFalseWhenGivenBlankString(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingRegex(" ")
+        val boolean = " ".isInitialCharacterAtoZUsingRegex()
         assertFalse(boolean)
     }
 
     @Test
     fun isInitialCharacterAtoZUsingUpperCaseReturnsFalseWhenGivenEmptyString(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingUpperCase("")
+        val boolean = "".isInitialCharacterAtoZUsingUpperCase()
         assertFalse(boolean)
     }
 
     @Test
     fun isInitialCharacterAtoZUsingRegexReturnsFalseWhenGivenEmptyString(){
-        val boolean = StringCheck.isInitialCharacterAtoZUsingRegex("")
+        val boolean = "".isInitialCharacterAtoZUsingRegex()
         assertFalse(boolean)
     }
 }
