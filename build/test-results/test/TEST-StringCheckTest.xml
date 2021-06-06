@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StringCheckTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-06-06T11:54:09" hostname="xyzs-MacBook-Pro.local" time="0.01">
+  <properties/>
+  <testcase name="isInitialCharacterAtoZUsingUpperCaseReturnsFalseWhenGivenStringWithInitialLowerCaseLetter" classname="StringCheckTest" time="0.008"/>
+  <testcase name="isInitialCharacterAtoZUsingUpperCaseReturnsTrueWhenGivenStringWithInitialUpperCaseLetter" classname="StringCheckTest" time="0.0"/>
+  <testcase name="isInitialCharacterAtoZUsingRegexReturnsFalseWhenGivenStringWithInitialLowerCaseLetter" classname="StringCheckTest" time="0.001"/>
+  <testcase name="isInitialCharacterAtoZUsingRegexReturnsTrueWhenGivenStringWithInitialUpperCaseLetter" classname="StringCheckTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
