@@ -27,4 +27,28 @@ class StringCheckTest{
         val boolean = StringCheck.isInitialCharacterAtoZUsingUpperCase("no")
         assertFalse(boolean)
     }
+
+    @Test
+    fun isInitialCharacterAtoZUsingUpperCaseReturnsFalseWhenGivenBlankString(){
+        val boolean = StringCheck.isInitialCharacterAtoZUsingUpperCase(" ")
+        assertFalse(boolean)
+    }
+
+    @Test
+    fun isInitialCharacterAtoZUsingRegexReturnsFalseWhenGivenBlankString(){
+        val boolean = StringCheck.isInitialCharacterAtoZUsingRegex(" ")
+        assertFalse(boolean)
+    }
+
+    @Test
+    fun isInitialCharacterAtoZUsingUpperCaseReturnsFalseWhenGivenEmptyString(){
+        val boolean = StringCheck.isInitialCharacterAtoZUsingUpperCase("")
+        assertFalse(boolean)
+    }
+
+    @Test
+    fun isInitialCharacterAtoZUsingRegexReturnsFalseWhenGivenEmptyString(){
+        val boolean = StringCheck.isInitialCharacterAtoZUsingRegex("")
+        assertFalse(boolean)
+    }
 }

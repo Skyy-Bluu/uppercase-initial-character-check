@@ -1,9 +1,9 @@
 object StringCheck {
     fun isInitialCharacterAtoZUsingUpperCase(string: String): Boolean =
-        string.first().isUpperCase()
+        string.isNotBlank() && string.first().isUpperCase()
 
     fun isInitialCharacterAtoZUsingRegex(string: String) =
-        string.contains("[A-Z][a-z]*".toRegex())
+        string.isNotBlank() && string.contains("[A-Z][a-z]*".toRegex())
 }
 
 fun main() {
